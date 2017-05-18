@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="js/jquery.js"></script>
+</head>
+<body>
+    <p>球的反彈高度計算</p>
+    <button type="button" id="button">click</button>
+    <script type="text/javascript">
+        $("#button").click( function() {
+            var h = 100*10000;
+            // console.log(h);
+            for ( var i = 0; i < 5; i++) {
+                h = h / 2;
+                // console.log(h);
+                $("#answer").append( "第" + (i+1) + "次反彈最高 " + (h/10000) + " 公尺<br>");
+            }
+        })
+    </script>
+    <hr>
+    <p>Answer：</p>
+    <div id="answer"></div>
+</body>
+</html>
